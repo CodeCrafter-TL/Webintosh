@@ -1,197 +1,105 @@
-<!DOCTYPE html>
-<html lang="zh-cn">
+<!--This index.html is a rewritted version which contains some brief info of the project.-->
+<!--This page will derect you to the boot up page.-->
 
-<head>
-    <title>macOS</title>
-    <link rel="icon" href="./images/AppleInternalIcon 2.png" />
-    <style>
+<html>
+    <head>
+        <title>Welcome to Webintosh</title>
+        <link rel="icon" href="./images/AppleInternalIcon 2.png" />
+        <style>
         body {
-            cursor: none!important;
-        }
-
-        @keyframes progressAnimation {
-            0% {
-                width: 0%;
-            }
-
-            100% {
-                width: 60%;
-            }
-        }
-
-        @keyframes progressContinue {
-            0% {
-                width: 60%;
-            }
-
-            100% {
-                width: 100%;
-            }
-        }
-
-        #alert-window {
-            width: 260px;
-            height: 232px;
-            box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.05), 0 38px 90px 0 rgba(0, 0, 0, 0.25), 0 0 1px 0 rgba(0, 0, 0, 0.60), inset 0 0 3px 0 rgba(255, 255, 255, 0.10);
-            border-radius: 10px;
-            background: #fbfbfb6f;
-            font-size: 13px;
-            text-align: center;
-            line-height: 16px;
-            position: absolute;
-            top: calc(50% - 132.5px);
-            left: calc(50% - 130px);
-            backdrop-filter: blur(30px);
-            -webkit-backdrop-filter: blur(30px);
-            z-index: 3;
-            opacity: 0;
-            animation: Alert 0.5s forwards ease-in-out, opacityBegin 0.525s forwards ease-in-out;
-            animation-delay: 0.75s;
-        }
-
-        #alert-window img {
-            width: 24.61%;
-            height: 24.15%;
-            margin-top: 7.5%;
-            border-radius: 16px;
-            opacity: 0;
-            animation: opacityBegin 0.25s forwards ease-in-out;
-            animation-delay: 0.75s;
-        }
-
-        #alert-window #title {
-            font-size: 13px;
-            font-weight: bold;
-            margin: 0;
-            margin-top: 7.5%;
-            opacity: 0;
-            animation: opacityBegin 0.25s forwards ease-in-out;
-            animation-delay: 0.75s;
-        }
-
-        #alert-window #des {
-            font-size: 13px;
-            font-weight: normal;
-            margin: 0;
-            margin-top: 3.77%;
-            opacity: 0;
-            animation: opacityBegin 0.25s forwards ease-in-out;
-            animation-delay: 0.75s;
-        }
-
-        #alert-window #btn {
-            font-size: 13px;
-            text-align: center;
-            line-height: 16px;
-            width: 87.69230769231%;
-            height: 9.811320754717%;
-            position: absolute;
-            top: 69.8%;
-            left: calc(50% - 87.69230769231% / 2);
-            display: inline-flex;
-            justify-content: center;
+            display: flex;
+            justify-content: end;
             align-items: center;
-            border-radius: 5px;
-            background-image: linear-gradient(179deg, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.00) 96%), linear-gradient(to bottom right, #2277ff, #0c61ff);
-            background-size: 100% 100%;
-            color: #000000;
-        }
-
-        #alert-window #btn p {
+            flex-direction: column;
             margin: 0;
-            color: #fff;
-        }
-    </style>
-    <script>
-        setTimeout(function () {
-            const ad = new Audio('audio/Begin.mp3')
-            ad.play()
-        }, 1000)
-    </script>
-</head>
-
-<body style="height: 100vh; overflow: hidden; background-color: #000;">
-    <div style="position: relative; width: 100%; height: 100%;">
-        <div style="position: absolute; top: calc(50% - 52px); left: calc(50% - 52px); filter: invert(100%)">
-            <img src="./images/AppleInternalIcon 2.png" alt="Apple Logo" width="104" height="104" id="logo"
-                style="opacity: 0;" />
-        </div>
-    </div>
-    <div id="progress-bar"
-        style="width: 15%; height: 3%; align-items: center; text-align: center; margin: auto; position: absolute; top: 92.5%; left: calc(50% - 15% / 2)">
-        <div style="background-color: #222; border-radius: 15px; height: 8.5px; overflow: hidden;" id="frame">
-            <div id="progress"
-                style="background-color: #ddd; width: 0%; height: 100%; animation: progressAnimation 6s forwards ease-out; opacity: 1; animation-delay: 1.5s;">
-            </div>
-        </div>
-    </div>
-    <noscript id="alert-window" style="animation-delay: 0s; z-index: 10000;">
-        <img style="animation: none; opacity: 1;" src="./images/AlertStopIcon 3.png" />
-        <p id="title" style="animation: none; opacity: 1;">No!!!</p>
-        <p id="des" style="animation: none; opacity: 1;">You disabled JavaScript.</p>
-        <div id="btn" onclick="window.location = 'about:blank'">
-            <p onclick="window.location = 'about:blank'">Exit</p>
-        </div>
-    </noscript>
-
-    <script>
-        function redirectToDesktop() {
-            window.location.href = "logon.html?bg=show"
-        }
-        function $$(id) {
-            return document.getElementById(id)
+            background-image: url(./images/Sequoia-Day.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
         }
 
-        var logo = $$("logo")
-        var progressBar = $$("progress")
-        var frame = $$("frame");
-
-        frame.style.backgroundColor = '#000'
-
-        setTimeout(function () {
-            var rd = Math.random()
-            if (rd < 0.25) {
-                logo.style.opacity = 1
-                logo.src = "./images/Unsupported 2.png"
-                logo.style.width = `128px`
-                logo.style.height = `128px`
-                logo.style.filter = 'invert(100%)'
-                progressBar.style.display = 'none'
-            } else {
-                logo.style.opacity = 1
-                setTimeout(function () {
-                    frame.style.backgroundColor = '#222';
-                    frame.style.border = `solid 0.4px rgba(255, 255, 255, 0.25)`;
-                    setTimeout(function () {
-                        frame.style.border = `none`
-                        setTimeout(function () {
-                            frame.style.border = `solid 0.4px rgba(255, 255, 255, 0.25)`;
-                            setTimeout(function () {
-                                frame.style.border = `none`;
-                            }, 2000);
-                        }, 1000);
-                    }, 7500);
-                }, 500)
-                setTimeout(function () {
-                    logo.style.opacity = 0
-                    progressBar.style.opacity = 0
-                    frame.style.backgroundColor = '#000'
-                    setTimeout(function () {
-                        logo.style.opacity = 1
-                        progressBar.style.opacity = 1
-                        progressBar.style.animation = `progressContinue 2s forwards ease-out`
-                        frame.style.backgroundColor = '#222';
-                        setTimeout(function () {
-                            logo.style.opacity = 0
-                            progressBar.style.opacity = 0
-                            frame.style.backgroundColor = '#000'
-                            setTimeout(redirectToDesktop, 1000)
-                        }, 2000)
-                    }, 1000)
-                }, 8000)
+        @keyframes BackBtnFloatingAnimation {
+            0% {
+                transform: scale(0.97);
+                background-color: rgba(0, 0, 0, 0.6);
+                letter-spacing: 7px;
             }
-        }, 1000)
-    </script>
-</body>
 
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes BtnFloatingAnimation {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(0.97);
+                background-color: rgba(0, 0, 0, 0.6);
+                letter-spacing: 7px;
+            }
+        }
+
+        .info-card {
+            /*display: flex;*/
+            backdrop-filter: blur(48px);
+            -webkit-backdrop-filter: blur(48px);
+            min-width: 50px;
+            min-height: 50px;
+            width: 65%;
+            height: 80%;
+            max-width: 1000px;
+            background-color: rgba(255,255,255,0.4);
+            border-radius: 24px;
+            position: relative;
+            top: 10%;
+            align-self: center;
+            align-items: flex-start;
+        }
+
+        h1 {
+            color: rgba(0,0,0,0.65);
+            text-align: center;
+            width: 100%;
+        }
+
+        .start-button {
+            background-color: rgba(0,0,0,0.3);
+            color: #fff;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+            width: 35%;
+            left: calc((100% - 35%) / 2 - 20px);
+            position: relative;
+            top: 20px;
+            text-align: center;   
+            letter-spacing: 4px;
+            display: block;
+            align-self: center;
+        }
+
+        .start-button:hover {
+            animation: BtnFloatingAnimation 0.3s forwards ease-in-out;
+        }
+
+        .start-button:not(:hover) {
+            animation: BackBtnFloatingAnimation 0.3s forwards ease-in-out;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="info-card">
+            <h1>Welcome to Webintosh</h1>
+            <p>This page is under construction!</p>
+            <p width="85%">This set of webpages provide you a realistic experience of MacOS in your web browser. 
+                All you have to do is to remember the log in password is one of the following: Ventura, Sonoma or Sequoia.
+                Then hit the button below and enjoy your smooth Mac experience right in your browser!
+            </p>
+            <p>Made with ❤ by CodeCrafter-TL</p>
+            <div class="start-button" onclick="window.location = 'boot.html'">Get Started →</div>
+        </div>
+    </body>
 </html>

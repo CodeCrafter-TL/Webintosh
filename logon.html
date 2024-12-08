@@ -302,54 +302,34 @@
                 var passwordInput = document.getElementById("password");
                 var spinner = document.getElementById("svg-frame");
                 var password = passwordInput.value;
-                if (password !== "Ventura") {
-                    if (password !== "Sonoma") {
-                        if (password !== "Sequoia") {
-                            spinner.style.opacity = 1;
-                            spinner.style.top = `97%`;
-                            spinner.style.left = `calc(50% - 10.5px)`;
+                if ((password !== "Ventura") && (password !== "Sonoma") && (password !== "Sequoia")){
+                    spinner.style.opacity = 1;
+                    spinner.style.top = `97%`;
+                    spinner.style.left = `calc(50% - 10.5px)`;
+                    setTimeout(function () {
+                        passwordInput.style.transform = "translateX(-60px)";
+                        setTimeout(function () {
+                            passwordInput.style.transform = "translateX(120px)";
+                        }, 50);
+                        setTimeout(function () {
+                            passwordInput.style.transform = "translateX(0)";
+                            passwordInput.style.transform = "translateX(-40px)";
                             setTimeout(function () {
-                                passwordInput.style.transform = "translateX(-60px)";
+                                passwordInput.style.transform = "translateX(80px)";
+                            }, 50);
+                            setTimeout(function () {
+                                passwordInput.style.transform = "translateX(0)";
+                                passwordInput.style.transform = "translateX(-20px)";
                                 setTimeout(function () {
-                                    passwordInput.style.transform = "translateX(120px)";
+                                    passwordInput.style.transform = "translateX(40px)";
                                 }, 50);
                                 setTimeout(function () {
                                     passwordInput.style.transform = "translateX(0)";
-                                    passwordInput.style.transform = "translateX(-40px)";
-                                    setTimeout(function () {
-                                        passwordInput.style.transform = "translateX(80px)";
-                                    }, 50);
-                                    setTimeout(function () {
-                                        passwordInput.style.transform = "translateX(0)";
-                                        passwordInput.style.transform = "translateX(-20px)";
-                                        setTimeout(function () {
-                                            passwordInput.style.transform = "translateX(40px)";
-                                        }, 50);
-                                        setTimeout(function () {
-                                            passwordInput.style.transform = "translateX(0)";
-                                        }, 100);
-                                    }, 100);
                                 }, 100);
-                                spinner.style.opacity = 0;
-                            }, 1000)
-                        } else {
-                            passwordInput.style.opacity = 0;
-                            spinner.style.opacity = 1;
-                            spinner.style.top = `94%`;
-                            spinner.style.left = `calc(50% - 10.5px)`;
-                            setTimeout(function () {
-                                window.location.href = "desktop.html";
-                            }, 1750);
-                        }
-                    } else {
-                        passwordInput.style.opacity = 0;
-                        spinner.style.opacity = 1;
-                        spinner.style.top = `94%`;
-                        spinner.style.left = `calc(50% - 10.5px)`;
-                        setTimeout(function () {
-                            window.location.href = "desktop.html";
-                        }, 1750);
-                    }
+                            }, 100);
+                        }, 100);
+                        spinner.style.opacity = 0;
+                    }, 1000)
                 } else {
                     passwordInput.style.opacity = 0;
                     spinner.style.opacity = 1;
