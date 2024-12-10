@@ -1,0 +1,121 @@
+* {
+    --boot-bg: #000;
+    --boot-color: #fff;
+    --boot-process-bg: #373737;
+    font-family: 'SFPro-Regular', 'PingFang-Regular';
+    cursor: default;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+body {
+    min-height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background: url(../../CoreServices/DefaultBackground.png);
+    /* background: url(/big-sur-mountains-night-dark-macos-big-sur-stock-california-3840x2160-1493.jpg); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div[overlay] {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1024;
+}
+
+*[relative] {
+    position: relative;
+}
+
+p[time] {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    clip-path: url(#timePath);
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+p[date] {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    clip-path: url(#datePath);
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+div[login] {
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img[icon] {
+    width: 64px;
+    height: 64px;
+}
+
+p[username] {
+    color: white;
+    margin: 5px;
+    text-shadow: 2px 2px 8px #000, 0px 0px 4px #000, -2px -2px 8px #000;
+}
+
+input[password] {
+    width: 120px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 7.5px;
+    border: none;
+    transition: transform 0.15s ease-in-out;
+    margin-top: 5px;
+}
+
+p[tip] {
+    color: white;
+    margin: 0;
+    text-shadow: 2px 2px 8px #000, 0px 0px 4px #000, -2px -2px 8px #000;
+    opacity: 0.75;
+    font-size: 13px;
+    margin-top: 1.5px;
+}
+
+div[svgframe] {
+    display: none;
+    width: 17px;
+    height: 17px;
+    padding: 2px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    margin-top: 1px;
+}

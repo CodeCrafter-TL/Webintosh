@@ -1,0 +1,102 @@
+* {
+    --finderbar-color: #fff;
+    font-family: 'SFPro-Regular', 'PingFang-Regular';
+    cursor: default;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+div[finderbar] {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(70px);
+    -webkit-backdrop-filter: blur(70px);
+    height: 24px;
+    z-index: 1024;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+div[finderbar] p {
+    text-shadow: 0 2px 10px #000a;
+    border-radius: 5px;
+    padding: 0 7.5px;
+}
+
+div[menus] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div[menus] p {
+    font-size: 16px;
+    margin: 0;
+    color: var(--finderbar-color);
+    margin-right: 2.5px;
+}
+
+div[menus] p[logo] {
+    font-size: 19px;
+}
+
+div[menus] p[appname] {
+    font-size: 15px;
+    font-family: 'SFPro-Bold', 'PingFang-Bold';
+}
+
+div[menus] p:last-child {
+    margin-right: 0;
+}
+
+div[controls] {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-self: flex-end;
+    margin-right: 15px;
+}
+
+div[controls] p {
+    font-size: 14px;
+    margin: 0;
+    color: var(--finderbar-color);
+    margin-right: 12.5px;
+}
+
+iframe {
+    border: none;
+}
+
+iframe[wallpaper] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+iframe[dock] {
+    width: 100%;
+    max-height: 105px;
+    min-height: 102.5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+iframe[window] {
+    position: absolute;
+}

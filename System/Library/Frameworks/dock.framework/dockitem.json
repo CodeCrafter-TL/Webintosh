@@ -1,0 +1,80 @@
+{
+    "items": [
+        [
+            "访达",
+            "/System/Library/CoreServices/Finder.app/MacOS/Finder.html"
+        ],
+        [
+            "启动台",
+            "/System/Applications/Launchpad.app/MacOS/Launchpad.html"
+        ],
+        [
+            "Safari浏览器",
+            "/Applications/Safari.app/MacOS/Safari.html"
+        ],
+        [
+            "信息",
+            "/System/Applications/Messages.app/MacOS/Messages.html"
+        ],
+        [
+            "邮件",
+            "/System/Applications/Mail.app/MacOS/Mail.html"
+        ],
+        [
+            "地图",
+            "/System/Applications/Map.app/MacOS/Map.html"
+        ],
+        [
+            "照片",
+            "/System/Applications/Photos.app/MacOS/Photos.html"
+        ],
+        [
+            "FaceTime通话",
+            "/System/Applications/FaceTime.app/MacOS/FaceTime.html"
+        ],
+        [
+            "日历",
+            "/System/Applications/Calender.app/MacOS/Calender.html"
+        ],
+        [
+            "通讯录",
+            "/System/Applications/Contact.app/MacOS/Contact.html"
+        ],
+        [
+            "提醒事项",
+            "/System/Applications/Reminders.app/MacOS/Reminders.html"
+        ],
+        [
+            "备忘录",
+            "/System/Applications/Notes.app/MacOS/Notes.html"
+        ],
+        [
+            "无边记",
+            "/System/Applications/Freeform.app/MacOS/Freeform.html"
+        ],
+        [
+            "视频",
+            "/System/Applications/TV.app/MacOS/TV.html"
+        ],
+        [
+            "音乐",
+            "/System/Applications/Music.app/MacOS/Music.html"
+        ],
+        [
+            "App Store",
+            "/System/Applications/App Store.app/MacOS/App Store.html"
+        ],
+        [
+            "系统设置",
+            "/System/Applications/System Settings.app/MacOS/System Settings.html"
+        ],
+        [
+            "iPhone镜像",
+            "/System/Applications/iPhone Mirroring.app/MacOS/iPhone Mirroring.html"
+        ],
+        [
+            "废纸篓",
+            "/Applications/Trash.app/MacOS/Trash.html"
+        ]
+    ]
+}
