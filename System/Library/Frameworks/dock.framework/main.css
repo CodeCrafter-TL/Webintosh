@@ -1,0 +1,92 @@
+* {
+    font-family: 'SFPro-Regular', 'PingFang-Regular';
+}
+
+@font-face {
+    src: url(../font.framework/sf-pro-display_regular.woff2);
+    font-family: 'SFPro-Regular';
+}
+
+@font-face {
+    src: url(../font.framework/PingFangSC-Regular.woff2);
+    font-family: 'PingFang-Regular';
+}
+
+@font-face {
+    src: url(../font.framework/sf-pro-display_semibold.woff2);
+    font-family: 'SFPro-Bold';
+}
+
+@font-face {
+    src: url(../font.framework/PingFangSC-Semibold.woff2);
+    font-family: 'PingFang-Bold';
+}
+
+body {
+    height: auto;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+hr {
+    background: #a8a8a8ac;
+    border-radius: 0.5px;
+    border: none;
+    margin: 0 5px;
+    height: 37.5px;
+    width: 1px;
+}
+
+div[appname] {
+    display: none;
+    position: absolute;
+    padding: 2.5px 10px;
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    z-index: 1024;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+}
+
+div[appname]::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -7.5px;
+    transform: translateX(-50%) rotate(180deg);
+    border-style: solid;
+    border-width: 0 7.5px 7.5px 7.5px;
+    border-color: transparent transparent rgba(255, 255, 255, 0.5) transparent;
+}
+
+div[dock] {
+    position: absolute;
+    width: auto;
+    height: auto;
+    border-radius: 16px;
+    background: #f6f6f658;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    border: 0.4px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 36px #000;
+    padding: 4px;
+    padding-bottom: 7px;
+    bottom: 2.5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+p {
+    margin: 0;
+}

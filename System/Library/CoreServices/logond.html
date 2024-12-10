@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>macOS Sequoia</title>
+    <link rel="stylesheet" href="../Frameworks/logond.framework/main.css" />
+    <link rel="stylesheet" href="../Frameworks/ui.framework/font.css" />
+</head>
+
+<body>
+    <div overlay></div>
+    <p time></p>
+    <p date></p>
+    <div login>
+        <img icon src="../Frameworks/logond.framework/UsersIcon.png" />
+        <p username>Webintosh</p>
+        <input type="text" placeholder="  输入密码" password />
+        <div svgframe>
+            <svg width="17px" height="16px" viewBox="0 0 17 16" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" id="svg">
+                <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Controls/Progress/Indeterminate-Spinner" transform="translate(0.5, 0)" fill="#000000">
+                        <g id="Group" transform="translate(-0.5, 0)">
+                            <rect id="rect1" fill-opacity="0.8" x="7.5" y="0" width="2" height="5" rx="1"></rect>
+                            <rect id="rect2" fill-opacity="0.1"
+                                transform="translate(12.3891, 4.1109) rotate(45) translate(-12.3891, -4.1109)"
+                                x="11.3890873" y="1.6109127" width="2" height="5" rx="1"></rect>
+                            <rect id="rect3" fill-opacity="0.2"
+                                transform="translate(14, 8) rotate(90) translate(-14, -8)" x="13" y="5.5" width="2"
+                                height="5" rx="1"></rect>
+                            <rect id="rect4" fill-opacity="0.3"
+                                transform="translate(12.3891, 11.8891) rotate(135) translate(-12.3891, -11.8891)"
+                                x="11.3890873" y="9.3890873" width="2" height="5" rx="1"></rect>
+                            <rect id="rect5" fill-opacity="0.4"
+                                transform="translate(8.5, 13.5) rotate(180) translate(-8.5, -13.5)" x="7.5" y="11"
+                                width="2" height="5" rx="1"></rect>
+                            <rect id="rect6" fill-opacity="0.5"
+                                transform="translate(4.6109, 11.8891) rotate(225) translate(-4.6109, -11.8891)"
+                                x="3.6109127" y="9.3890873" width="2" height="5" rx="1"></rect>
+                            <rect id="rect7" fill-opacity="0.6"
+                                transform="translate(3, 8) rotate(270) translate(-3, -8)" x="2" y="5.5" width="2"
+                                height="5" rx="1"></rect>
+                            <rect id="rect8" fill-opacity="0.7"
+                                transform="translate(4.6109, 4.1109) rotate(315) translate(-4.6109, -4.1109)"
+                                x="3.6109127" y="1.6109127" width="2" height="5" rx="1"></rect>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <p tip>你必须输入密码才能登录</p>
+    </div>
+
+    <svg height="300" width="1920">
+        <defs>
+            <clipPath id="timePath">
+                <text id="timeText" x="519.5" y="200" font-size="106px">19:00</text>
+            </clipPath>
+        </defs>
+    </svg>
+    <svg height="300" width="1920">
+        <defs>
+            <clipPath id="datePath">
+                <text id="dateText" x="575" y="90" font-size="24px">12月6日 星期五</text>
+            </clipPath>
+        </defs>
+    </svg>
+
+    <script src="../Frameworks/logond.framework/main.js"></script>
+</body>
+
+</html>

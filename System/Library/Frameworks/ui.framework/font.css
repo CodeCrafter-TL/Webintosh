@@ -1,0 +1,19 @@
+@font-face {
+    src: url(../font.framework/sf-pro-display_regular.woff2);
+    font-family: 'SFPro-Regular';
+}
+
+@font-face {
+    src: url(../font.framework/PingFangSC-Regular.woff2);
+    font-family: 'PingFang-Regular';
+}
+
+@font-face {
+    src: url(../font.framework/sf-pro-display_semibold.woff2);
+    font-family: 'SFPro-Bold';
+}
+
+@font-face {
+    src: url(../font.framework/PingFangSC-Semibold.woff2);
+    font-family: 'PingFang-Bold';
+}
