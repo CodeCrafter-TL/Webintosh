@@ -2,80 +2,80 @@
     "items": [
         [
             "访达",
-            "Apps/Finder.html"
+            "apps/Finder.html"
         ],
         [
             "启动台",
-            "Apps/Launchpad.html",
+            "apps/Launchpad.html",
             0, 0
         ],
         [
             "Safari浏览器",
-            "Apps/Safari.html"
+            "apps/Safari.html"
         ],
         [
             "信息",
-            "Apps/Messages.html"
+            "apps/Messages.html"
         ],
         [
             "邮件",
-            "Apps/Mail.html"
+            "apps/Mail.html"
         ],
         [
             "地图",
-            "Apps/Map.html"
+            "apps/Map.html"
         ],
         [
             "照片",
-            "Apps/Photos.html"
+            "apps/Photos.html"
         ],
         [
             "FaceTime通话",
-            "Apps/FaceTime.html"
+            "apps/FaceTime.html"
         ],
         [
             "日历",
-            "Apps/Calender.html"
+            "apps/Calender.html"
         ],
         [
             "通讯录",
-            "Apps/Contact.html"
+            "apps/Contact.html"
         ],
         [
             "提醒事项",
-            "Apps/Reminders.html"
+            "apps/Reminders.html"
         ],
         [
             "备忘录",
-            "Apps/Notes.html"
+            "apps/Notes.html"
         ],
         [
             "无边记",
-            "Apps/Freeform.html"
+            "apps/Freeform.html"
         ],
         [
             "视频",
-            "Apps/TV.html"
+            "apps/TV.html"
         ],
         [
             "音乐",
-            "Apps/Music.html"
+            "apps/Music.html"
         ],
         [
             "App Store",
-            "Apps/App Store.html"
+            "apps/App Store.html"
         ],
         [
             "系统设置",
-            "Apps/System Settings.html"
+            "apps/System Settings.html"
         ],
         [
             "iPhone镜像",
-            "Apps/iPhone Mirroring.html"
+            "apps/iPhone Mirroring.html"
         ],
         [
             "废纸篓",
-            "Apps/Finder.html?trash"
+            "apps/Finder.html?trash"
         ]
     ]
 }
