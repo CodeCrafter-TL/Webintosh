@@ -6,7 +6,7 @@
 
 # 纯 Web 仿 macOS Sequoia 项目
 
-> Webintosh
+> [桌面部分 (Webintosh-Desktop)](https://github.com/codecrafter-tl/webintosh-desktop)
 
 <!-- Shelds -->
 <!-- Reserved for stats-->
