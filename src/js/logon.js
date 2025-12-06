@@ -10,7 +10,7 @@ const dateSvg = getText('dateText');
 const password = getInput('password');
 const svgFrame = getDiv('svgFrame');
 const tip = getP('tip');
-const passwords = [ // 明文给你放这了 自己去玩吧 :)
+const passwords = [ // 明文放这了 去玩吧 :)
     "Ventura",
     "Sonoma",
     "Sequoia",
@@ -112,7 +112,7 @@ async function toDesktop() {
     }
 
     await sleep(timeout);
-    window.location = '../desktop';
+    window.location = '/Webintosh-Desktop';
 }
 
 async function invalidPassword(value = "Ventura Sonoma Sequoia 选一个吧") {
