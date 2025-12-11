@@ -51,9 +51,9 @@
 ### 在线体验
 直接访问已静态部署的演示站点：
 
-**主项目:** [https://codecrafter-tl.github.io/Webintosh](https://codecrafter-tl.github.io/Webintosh)
+**主项目:** [https://mengobs.github.io/Webintosh](https://mengobs.github.io/Webintosh)
 
-**桌面部分:** [https://codecrafter-tl.github.io/Webintosh-Desktop](https://codecrafter-tl.github.io/Webintosh-Desktop)
+**桌面部分:** [https://mengobs.github.io/Webintosh-Desktop](https://mengobs.github.io/Webintosh-Desktop)
 
 ## 🛠️ 技术栈
 
@@ -79,8 +79,8 @@
 
 ## 📞 联系与支持
 
-- **问题反馈**: [GitHub Issues](https://github.com/codecrafter-tl/webintosh/issues)
-- **讨论区**: [GitHub Discussions](https://github.com/codecrafter-tl/webintosh/discussions)
+- **问题反馈**: [GitHub Issues](https://github.com/mengobs/webintosh/issues)
+- **讨论区**: [GitHub Discussions](https://github.com/mengobs/webintosh/discussions)
 - **邮件**: 1825456084@qq.com
 
 ---
@@ -89,8 +89,8 @@
   
 **如果喜欢这个项目，请给它一个 ⭐️Star**
 
-[![Star History Chart](https://api.star-history.com/svg?repos=codecrafter-tl/webintosh&type=Date)](https://star-history.com/#codecrafter-tl/webintosh&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=mengobs/webintosh&type=Date)](https://star-history.com/#mengobs/webintosh&Date)
 
-[![Star History Chart](https://api.star-history.com/svg?repos=codecrafter-tl/webintosh-desktop&type=Date)](https://star-history.com/#codecrafter-tl/webintosh-desktop&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=mengobs/webintosh-desktop&type=Date)](https://star-history.com/#mengobs/webintosh-desktop&Date)
 
 </div>
